@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Sharil Shariff | Free Zone Department</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef3f1;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 1100px;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+        }
+
+        .top {
+            background: linear-gradient(135deg, #064e3b, #0f766e);
+            color: white;
+            padding: 35px 45px;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .profile {
+            width: 155px;
+            height: 155px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.9);
+            flex-shrink: 0;
+        }
+
+        .identity {
+            flex: 1;
+        }
+
+        .identity h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .identity .position {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .identity .company {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .logo {
+            width: 145px;
+            max-height: 90px;
+            object-fit: contain;
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .content {
+            padding: 35px 45px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .contact-item {
+            text-decoration: none;
+            color: #123;
+            border: 1px solid #dce7e4;
+            border-radius: 15px;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.2s;
+            background: #f9fcfb;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: #0f766e;
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: #dff4ef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .label {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+
+        .value {
+            font-size: 15px;
+            font-weight: bold;
+            color: #064e3b;
+            word-break: break-word;
+        }
+
+        .address {
+            margin-top: 20px;
+            border: 1px solid #dce7e4;
+            border-radius: 15px;
+            padding: 20px;
+            background: #f9fcfb;
+            text-decoration: none;
+            color: #123;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .address:hover {
+            border-color: #0f766e;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+        }
+
+        .save-btn {
+            text-decoration: none;
+            background: linear-gradient(135deg, #064e3b, #0f766e);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 7px 18px rgba(6,78,59,0.25);
+            transition: 0.2s;
+        }
+
+        .save-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: #f1f6f4;
+            color: #6b7280;
+            font-size: 12px;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 15px;
+            }
+
+            .top {
+                padding: 30px 25px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                width: 130px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .identity h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="top">
+
+        <img src="profile.jpg" alt="Abdul Sharil Shariff" class="profile">
+
+        <div class="identity">
+            <h1>Abdul Sharil Shariff</h1>
+            <div class="position">Free Zone Department</div>
+            <div class="company">Port Klang Free Zone Sdn Bhd</div>
+        </div>
+
+        <img src="pkfz-logo.png" alt="PKFZ Logo" class="logo">
+
+    </div>
+
+    <div class="content">
+
+        <div class="contact-grid">
+
+            <a href="tel:0192792104" class="contact-item">
+                <div class="icon">📱</div>
+                <div>
+                    <div class="label">Mobile</div>
+                    <div class="value">019-2792104</div>
+                </div>
+            </a>
+
+            <a href="tel:+60331015568" class="contact-item">
+                <div class="icon">☎️</div>
+                <div>
+                    <div class="label">Office</div>
+                    <div class="value">+603-3101 5568</div>
+                </div>
+            </a>
+
+            <a href="mailto:sharil@pkfz.com" class="contact-item">
+                <div class="icon">📧</div>
+                <div>
+                    <div class="label">Email</div>
+                    <div class="value">sharil@pkfz.com</div>
+                </div>
+            </a>
+
+            <a href="https://www.pkfz.com"
+               target="_blank"
+               rel="noopener"
+               class="contact-item">
+                <div class="icon">🌐</div>
+                <div>
+                    <div class="label">Website</div>
+                    <div class="value">www.pkfz.com</div>
+                </div>
+            </a>
+
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Port+Klang+Free+Zone+Pulau+Indah+Selangor"
+           target="_blank"
+           rel="noopener"
+           class="address">
+
+            <div class="icon">📍</div>
+
+            <div>
+                <div class="label">PKFZ Address</div>
+                <div class="value">
+                    Jalan FZ 2-P5, Port Klang Free Zone/KS 12,<br>
+                    42920 Pulau Indah, Selangor Darul Ehsan, Malaysia
+                </div>
+            </div>
+
+        </a>
+
+        <div class="buttons">
+            <a href="contact.vcf" class="save-btn">
+                💾 Save Contact
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        Port Klang Free Zone Sdn Bhd • Free Zone Department
+    </footer>
+
+</div>
+
+</body>
+</html>
